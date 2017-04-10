@@ -1,6 +1,4 @@
 using System.Linq;
-using System.Web.ModelBinding;
-
 namespace WEDO.Common.Extension
 {
     public static class ModelStateExtension
@@ -10,7 +8,7 @@ namespace WEDO.Common.Extension
         /// </summary>
         /// <param name="modelState"></param>
         /// <returns></returns>
-        public static string GetErrorMsg(this ModelStateDictionary modelState)
+        public static string GetErrorMsg(this System .Web.Mvc .ModelStateDictionary modelState)
         {
             if (modelState.IsValid || !modelState.Values.Any())
             {
